@@ -1,0 +1,1 @@
+document.write('<p>this is the first javascript page</p>')
