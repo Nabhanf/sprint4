@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    city1 = prompt("enter the city name");
+    population1 = parseInt(prompt("enter the number"));
+    city2 = prompt("enter the city name");
+    population2 = parseInt(prompt("enter the number"));
+    city3 = prompt("enter the city name");
+    population3 = parseInt(prompt("enter the number"));
+    totalpopulation = population1 + population2 + population3;
+    alert(totalpopulation);
+    var average = totalpopulation / 3;
+    alert(average + "is the average popuation");
+    // document.write("<p>Name of the city:" + city1 + "</p>");
+    // document.write("<p>population of the city:" + population1 + "</p>");
+    // document.write("<p>Name of the city:" + city2 + "</p>");
+    // document.write("population of the city:" + population2 + "</p>");
+    // document.write("Name of the city:" + city3 + "</p>");
+    // document.write("population of the city:" + population3 + "</p>");
+    document.write("<table border='1'>");
+      document.write("<tr><th>City name</th><th>Population</th>");
+        document.write("<tr><td>"+city1+"</td><td>"+population1+"</td></tr>");
+        document.write("<tr><td>"+city2+"</td><td>"+population2+"</td></tr>");
+        document.write("<tr><td>"+city3+"</td><td>"+population3+"</td></tr>");
+      document.write("</table>");
+
+         
+
+      
+  </script>
+  <body></body>
+</html>

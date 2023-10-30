@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var product_name1 = prompt("enter the product");
+      var product_1 = parseInt(prompt("enter the number"));
+      var product_name2 = prompt("enter the product");
+      var product_2 = parseInt(prompt("enter the number"));
+      var product_name3 = prompt("enter the product");
+      var product_3 = parseInt(prompt("enter the number"));
+      var product_name4 = prompt("enter the product");
+      var product_4 = parseInt(prompt("enter the number"));
+      var product_name5 = prompt("enter the product");
+      var product_5 = parseInt(prompt("enter the number"));
+      var Total_price =
+        product_1 + product_2 + product_3 + product_4 + product_5;
+      alert(Total_price);
+      // var discount = 20;
+      // alert(discount);
+      // } else {
+      //   alert("No discount");
+      // }
+
+      document.write("<table border= '1'>");
+      document.write("<tr><th>PRODUCT</th><th>Price</th></tr>");
+      document.write(
+        "<tr><td>" + product_name1 + "</td><td>" + product_1 + "</td></tr>"
+      );
+      document.write(
+        "<tr><td>" + product_name2 + "</td><td>" + product_2 + "</td></tr>"
+      );
+      document.write(
+        "<tr><td>" + product_name3 + "</td><td>" + product_3 + "</td></tr>"
+      );
+      document.write(
+        "<tr><td>" + product_name4 + "</td><td>" + product_4 + "</td></tr>"
+      );
+      document.write(
+        "<tr><td>" + product_name5 + "</td><td>" + product_5 + "</td></tr>"
+      );
+
+      document.write(
+        "<tr><th>GRAND TOTAL</th><td>" + Total_price + "</td></tr>"
+      );
+      if (Total_price > 300) {
+        discount = Total_price - 20;
+        document.write(
+          "<tr><th>DISCOUNT TOTAL</th><td>" + discount + "</td></tr>"
+        );
+      }
+      document.write("</table>");
+    </script>
+  </body>
+</html>
